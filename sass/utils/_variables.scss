@@ -1,0 +1,15 @@
+$text-color: #757575;
+$title-color: #212121; // основний колір
+$hero-color: #ffffff;  // колір героя
+$accent-color: #2196f3;// колір акцента
+$background-color-hero: #2f303a; // колір фону героя
+$bg-color: #f5f4fa; // колір фону документа
+$logo-network-color: #afb1b8; 
+$item-work-gap: 30px;
+$logoheader-color: #000000;
+
+
+@transition: {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+};

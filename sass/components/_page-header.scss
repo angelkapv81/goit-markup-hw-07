@@ -1,0 +1,114 @@
+.stie-nav-contact__contact {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    padding: 32px 0;
+    @transition;
+    cursor: pointer;
+    &:hover,
+    &:focus {  
+    color: $accent-color;
+    }
+  }
+
+.stie-nav-contact__item {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  align-items: center;
+}
+.site-nav .link.current {
+  color: $accent-color;
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+.site-nav__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+// .site-nav .item:last-child {
+  
+// }
+
+
+/* лого header */
+.logo {
+  color: $accent-color;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logoheader {
+  color: $logoheader-color;
+}
+
+.link {
+  color: $title-color;
+  padding: 32px 0;
+  display: block;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+/* лого контакти */
+.site-nav-contact {
+  display: flex;
+  margin-left: auto;
+}
+stie-nav-contact__contact {
+  margin-left: 50px;
+}
+// .site-nav-contact .contact-nav + .contact-nav {
+//   margin-left: 50px;
+// }
+.stie-nav-contact__contact {
+  display: flex;
+  align-items: center;
+  color: $text-color;
+  padding: 32px 0;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.contact-top {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+
+.link:hover,
+.link:focus {
+  color: $accent-color;
+  cursor: pointer;
+}
+.main-headline {
+    padding-top: 0;
+  }
+  .headline {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
