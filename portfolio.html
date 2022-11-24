@@ -63,39 +63,49 @@
       <section>
         <div class="container">
           <div class="main-portfolio">
+
             <ul class="bt-portfolio">
-              <li class="main-bt-portfolio">
-                <button type="button" class="button-portfolio">Усі</button>
+              <li class="bt-portfolio__item">
+                <button type="button" class="bt-portfolio__button">Усі</button>
               </li>
-              <li class="main-bt-portfolio">
-                <button type="button" class="button-portfolio">
+
+              <li class="bt-portfolio__item">
+                <button type="button" class="bt-portfolio__button">
                   Веб-сайти
                 </button>
               </li>
-              <li class="main-bt-portfolio">
-                <button type="button" class="button-portfolio">Додатки</button>
+
+              <li class="bt-portfolio__item">
+                <button type="button" class="bt-portfolio__button">Додатки</button>
               </li>
-              <li class="main-bt-portfolio">
-                <button type="button" class="button-portfolio">Дизайн</button>
+              <li class="bt-portfolio__item">
+                <button type="button" class="bt-portfolio__button">Дизайн</button>
               </li>
-              <li class="main-bt-portfolio">
-                <button type="button" class="button-portfolio">
+              <li class="bt-portfolio__item">
+                <button type="button" class="bt-portfolio__button">
                   Маркетинг
                 </button>
               </li>
             </ul>
           </div>
+
           <!--приклади робіт-->
           <div class="work-img">
             <h1 class="visually-hidden">Приклади робіт</h1>
 
             <ul class="work">
-              <li class="item-work">
+<!--  item-work-->
+              <li class="work__item"> 
+
                 <a href="" class="card">
-                  <div class="card-thumb">
+<!-- card-thumb -->
+                  <div class="card__img">
+
                     <img src="images/site5.jpg" alt="site" width="370" />
-                    <div class="windows">
-                      <p class="text-windows">
+<!-- windows -->
+                    <div class="card__thumb">
+  <!--  text-windows-->
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -103,22 +113,28 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Технокряк</h2>
-                    <p class="project-example">Веб-сайт</p>
+  <!-- work-name -->
+                  <div class="card__name">
+  <!-- project-name -->
+                    <h2 class="card__project">Технокряк</h2>
+  <!-- project-example -->
+                    <p class="card__example">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+
+
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+
+                  <div class="card__img">
                     <img
                       src="images/basketball6.jpg"
                       alt="basketball"
                       width="370"
                     />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -126,20 +142,20 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">
+                  <div class="card__name">
+                    <h2 class="card__project">
                       Постер New Orlean vs Golden Star
                     </h2>
-                    <p class="project-example">Дизайн</p>
+                    <p class="card__example">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img src="images/seafood7.jpg" alt="seafood" width="370" />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -147,22 +163,22 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Ресторан Seafood</h2>
-                    <p class="project-example">Додаток</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Ресторан Seafood</h2>
+                    <p class="card__example">Додаток</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img
                       src="images/headphones8.jpg"
                       alt="headphones"
                       width="370"
                     />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -170,18 +186,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Проєкт Prime</h2>
-                    <p class="project-example">Маркетинг</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Проєкт Prime</h2>
+                    <p class="card__example">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img src="images/box9.jpg" alt="box" width="370" />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -189,18 +205,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Проєкт Boxes</h2>
-                    <p class="project-example">Додаток</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Проєкт Boxes</h2>
+                    <p class="card__example">Додаток</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img src="images/monitor10.jpg" alt="monitor" width="370" />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -208,18 +224,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Inspiration has no Borders</h2>
-                    <p class="project-example">Веб-сайт</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Inspiration has no Borders</h2>
+                    <p class="card__example">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img src="images/book11.jpg" alt="book" width="370" />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -227,22 +243,22 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Видання Limited Edition</h2>
-                    <p class="project-example">Дизайн</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Видання Limited Edition</h2>
+                    <p class="card__example">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img
                       src="images/labeltag12.jpg"
                       alt="labeltag"
                       width="370"
                     />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -250,22 +266,22 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Проєкт LAB</h2>
-                    <p class="project-example">Маркетинг</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Проєкт LAB</h2>
+                    <p class="card__example">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="item-work">
+              <li class="work__item">
                 <a href="" class="card">
-                  <div class="card-thumb">
+                  <div class="card__img">
                     <img
                       src="images/growing_business13.jpg"
                       alt="growing_business"
                       width="370"
                     />
-                    <div class="windows">
-                      <p class="text-windows">
+                    <div class="card__thumb">
+                      <p class="card__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -273,9 +289,9 @@
                       </p>
                     </div>
                   </div>
-                  <div class="work-name">
-                    <h2 class="project-name">Growing Business</h2>
-                    <p class="project-example">Додаток</p>
+                  <div class="card__name">
+                    <h2 class="card__project">Growing Business</h2>
+                    <p class="card__example">Додаток</p>
                   </div>
                 </a>
               </li>

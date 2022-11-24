@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--headline-->
@@ -21,39 +21,24 @@
       <div class="container main-nav">
         <!-- container -->
         <!-- <nav> -->
-
         <a href="index.html" class="logo">
           Web<span class="logoheader">Studio</span>
         </a>
-
-
         <ul class="site-nav">
-
-          <li class="site-nav__item">
-
-            <a href="index.html" class="site-nav__link current ">Студія</a>
-
+          <li class="item">
+            <a href="index.html" class="link current">Студія</a>
           </li>
-
-          <li class="site-nav__item">
-
-            <a href="portfolio.html" class="site-nav__link">Портфоліо</a>
-
+          <li class="item">
+            <a href="portfolio.html" class="link">Портфоліо</a>
           </li>
-
-          <li class="site-nav__item">
-
-            <a href="" class="site-nav__link">Контакти</a>
-
+          <li class="item">
+            <a href="" class="link">Контакти</a>
           </li>
-
         </ul>
-
-
         <!-- </nav> -->
         <ul class="site-nav-contact">
-          <li class="stie-nav-contact__item">
-            <a href="mailto:info@devstudio.com" class="stie-nav-contact__contact">
+          <li class="contact-nav">
+            <a href="mailto:info@devstudio.com" class="contact">
               <svg class="contact-top" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope-1"></use>
               </svg>
@@ -62,8 +47,8 @@
             >
           </li>
 
-          <li class="stie-nav-contact__item">
-            <a href="tel:+380961111111" class="stie-nav-contact__contact">
+          <li class="contact-nav">
+            <a href="tel:+380961111111" class="contact">
               <svg class="contact-top" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-mob2"></use>
               </svg>
@@ -161,60 +146,60 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantage">
-            <li class="advantage-item">
+            <li class="advantage__item">
               <div class="thumb">
-                <div class="thumb-advantage">
-                  <svg class="picture" width="70px" height="70px">
+                <div class="thumb__advantage">
+                  <svg class="thumb__picture" width="70px" height="70px">
                     <use href="./images/icons.svg#icon-antena1"></use>
                   </svg>
                 </div>
-                <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="text">
+                <h3 class="thumb__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="humb__paragraph">
                   Ідейні міркування, і навіть початок повсякденної роботи з
                   формування позиції.
                 </p>
               </div>
             </li>
-            <li class="advantage-item">
+            <li class="advantage__item">
               <div class="thumb">
-                <div class="thumb-advantage">
-                  <svg class="picture" width="70px" height="54px">
+                <div class="thumb__advantage">
+                  <svg class="thumb__picture" width="70px" height="54px">
                     <use href="./images/icons.svg#icon-watch2"></use>
                   </svg>
                 </div>
-                <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="text">
+                <h3 class="thumb__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="thumb__paragraph">
                   Завдання організації, особливо рамки і місце навчання кадрів
                   тягне у себе.
                 </p>
               </div>
             </li>
 
-            <li class="advantage-item">
+            <li class="advantage__item">
               <div class="thumb">
-                <div class="thumb-advantage">
-                  <svg class="picture" width="67px" height="70px">
+                <div class="thumb__advantage">
+                  <svg class="thumb__picture" width="67px" height="70px">
                     <use href="./images/icons.svg#icon-monitor3"></use>
                   </svg>
                 </div>
-                <h3 class="title">ПЛАНУВАННЯ</h3>
-                <p class="text">
+                <h3 class="thumb__title">ПЛАНУВАННЯ</h3>
+                <p class="thumb__paragraph">
                   Так само консультація з широким активом значною мірою
                   зумовлює.
                 </p>
               </div>
             </li>
 
-            <li class="advantage-item">
+            <li class="advantage__item">
               <div class="thumb">
-                <div class="thumb-advantage">
-                  <svg class="picture" width="70px" height="70px">
+                <div class="thumb__advantage">
+                  <svg class="thumb__picture" width="70px" height="70px">
                     <use href="./images/icons.svg#icon-astronaut4"></use>
                   </svg>
                 </div>
 
-                <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="text">
+                <h3 class="thumb__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="thumb__paragraph">
                   Значимість цих проблем настільки очевидна, що реалізація
                   планових завдань.
                 </p>
@@ -229,19 +214,19 @@
         <div class="container">
           <h2 class="headline">Чим ми займаємося</h2>
           <ul class="images-work">
-            <li class="images-work-item">
+            <li class="images-work__item">
               <img src="images/komp1.jpg" alt="комп'ютер" width="370" />
               <div class="images-text">
                 <p class="images-name">ДЕСКТОПНІ ДОДАТКИ</p>
               </div>
             </li>
-            <li class="images-work-item">
+            <li class="images-work__item">
               <img src="images/nout2.jpg" alt="ноутбук" width="370" />
               <div class="images-text">
                 <p class="images-name">МОБІЛЬНІ ДОДАТКИ</p>
               </div>
             </li>
-            <li class="images-work-item">
+            <li class="images-work__item">
               <img src="images/planshet3.jpg" alt="планшет" width="370" />
               <div class="images-text">
                 <p class="images-name">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
@@ -532,28 +517,20 @@
           </ul>
         </div>
 
-        <form class="mail-sign">
-          <div class="footer-sign">
-            <p class="label-sign-footer">Підпишіться на розсилку</p>
-
-            <div class="footer-sign-sign">
-              <label>
-                <input
-                  class="input-sign"
-                  type="email"
-                  name="sign"
-                  placeholder="E-mail"
-                />
-              </label>
-
-              <button type="submit" class="button-sign">
-                Підписатися
-                <svg class="icon-sign" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+        <form class="">
+          <div class="">
+            <label class="" for="sign">Підпишіться на розсилку</label>
           </div>
+          <div>
+            <input class="" type="email" name="sign" id="sign" placeholder="" />
+          </div>
+
+          <button type="submit" class="sign">
+            Підписатися
+            <!-- <svg class="" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-send"></use>
+             </svg> -->
+          </button>
         </form>
       </div>
     </footer>
