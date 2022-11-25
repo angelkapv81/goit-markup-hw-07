@@ -1,78 +1,49 @@
 @charset "UTF-8";
-body {
-  color: #757575;
-  letter-spacing: 0.03em;
-  background-color: #ffffff;
-  font-family: Roboto, sans-serif;
-  border: 0;
-  margin: 0;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.portfolio-main {
-  border-top: 1px solid #ececec;
-}
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  width: 1200px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-ul,
-p,
-h2 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.link,
-.logo,
-.contact,
-.logofooter,
-.contactfooter,
-.contactfooter-tel {
-  text-decoration: none;
+.site-nav-contact__link, .site-nav__link {
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
 
-.contact:focus,
-.contact:hover {
+.site-nav__link {
+  color: .site-nav__link title-color;
+  padding: 32px 0;
+  display: block;
   cursor: pointer;
+}
+.site-nav__link:focus, .site-nav__link:hover {
   color: #2196f3;
 }
 
-.contact-nav {
+.site-nav-contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.site-nav__link--active {
+  color: #2196f3;
+  position: relative;
+}
+
+.site-nav__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
 }
 
 .site-nav {
@@ -89,32 +60,8 @@ h2 {
           align-items: center;
 }
 
-.site-nav .link.current::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
-
-.site-nav .item {
-  margin-right: 50px;
-}
-
-.site-nav .item:last-child {
-  margin-right: 0;
-}
-
-.site-nav .link.current {
-  color: #2196f3;
-  position: relative;
-}
-
 /* лого header */
-.logo {
+.main-nav__logo {
   color: #2196f3;
   font-family: "Raleway";
   font-weight: 700;
@@ -122,18 +69,8 @@ h2 {
   line-height: 1.19;
 }
 
-.logoheader {
+.main-nav__text {
   color: #000000;
-}
-
-.link {
-  color: #212121;
-  padding: 32px 0;
-  display: block;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
 }
 
 /* лого контакти */
@@ -144,11 +81,15 @@ h2 {
   margin-left: auto;
 }
 
-.site-nav-contact .contact-nav + .contact-nav {
+.site-nav-contact__item {
   margin-left: 50px;
 }
 
-.contact {
+.site-nav-contact__item:first-child {
+  margin-left: 0;
+}
+
+.site-nav-contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,33 +98,24 @@ h2 {
           align-items: center;
   color: #757575;
   padding: 32px 0;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
 }
 
-.contact-top {
+.site-nav-contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.link:hover,
-.link:focus {
-  color: #2196f3;
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.bt-portfolio__button:hover,
+.bt-portfolio__button:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #2196f3;
   cursor: pointer;
-}
-
-.main-headline {
-  padding-top: 0;
-}
-
-.headline {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=main.css.map */

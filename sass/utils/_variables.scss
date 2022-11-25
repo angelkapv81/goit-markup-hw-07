@@ -8,8 +8,7 @@ $logo-network-color: #afb1b8;
 $item-work-gap: 30px;
 $logoheader-color: #000000;
 
-
-@transition: {
+%transition {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
-};
+}

@@ -595,14 +595,13 @@ h2 {
   display: flex;
 }
 
-.footer-network__item {
+.footer-network {
   display: flex;
-  
-}
+  } 
 
-/* .footer-network__item:not(:last-child) {
+.footer-network__item:not(:last-child) {
   margin-right: 10px;
-} */
+} 
 
 .info-address {
   margin-right: 70px;
@@ -617,8 +616,7 @@ h2 {
   background-color: var(--accent-color);
 }
 .footer-network__logo {
-  display: flex;
-  height: 44px;
+    height: 44px;
   width: 44px;
   border-radius: 50%;
   fill: var(--hero-color);
