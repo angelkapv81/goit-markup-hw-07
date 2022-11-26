@@ -1,7 +1,3 @@
-textarea {
-  resize: none;
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -30,15 +26,8 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+     margin-bottom: 10px;
   }
-
-//   &__group:nth-child(4n) {
-//     margin-bottom: 0;
-//   } 
-//   &__group:last-child {
-//     margin-bottom: 0;
-//   }
 
   &__icon {
     position: absolute;
@@ -107,8 +96,7 @@ textarea {
 .mail-sign {
   display: flex;
   margin-left: 93px;
-  /* align-items: center; */
-}
+  }
 
 .label-sign-footer {
   font-weight: 700;
@@ -172,29 +160,52 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+&__input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  &__contract {
+    color: $accent-color;
+  }
 }
 
-.form-group-agrees__checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: $text-color;
-}
+// .form-group-agrees__checkbox {
+//   display: flex;
+//   align-items: center;
+//   font-size: 14px;
+//   line-height: calc(24 / 14);
+//   letter-spacing: 0.03em;
+//   color: $text-color;
+// }
 
-.form-group-agrees__input {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+// .form-group-agrees__input {
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   border: 0;
+//   padding: 0;
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   margin: -1px;
+// }
 
 .form-group-agrees__input:focus + .form-group-agrees__icon,
 .form-group-agrees__input:hover + .form-group-agrees__icon {
@@ -217,9 +228,9 @@ span[class="form-group-agrees__icon"] {
   border-radius: 4px;
 }
 
-.form-group-agrees__contract {
-  color: $accent-color;
-}
+// .form-group-agrees__contract {
+//   color: $accent-color;
+// }
 
 .modal-contact__input:focus {
   fill: $accent-color;
@@ -228,39 +239,40 @@ span[class="form-group-agrees__icon"] {
 .form-group-agrees__submit {
   width: 200px;
   height: 50px;
-  background-color: #188ce8;
+  background-color: $active-color;
   outline: none;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: var(--hero-color);
+  color: $hero-color;
   border-radius: 4px;
   border: none;
   margin-top: 30px;
   padding: 0;
   @extend %transition;
-}
-
-.form-group-agrees__submit:focus,
-.form-group-agrees__submit:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: $accent-color;
+  &:focus, 
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $accent-color; 
+    }
+
 }
 
 textarea {
+    resize: none;
   padding: 12px 16px;
   height: 120px;
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   @extend %transition;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
 
 textarea:focus,
 textarea:hover,
@@ -269,7 +281,7 @@ input:focus,
 input:hover,
 input:active {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid $accent-color;
 }
 
 input:focus + .modal-contact__icon,

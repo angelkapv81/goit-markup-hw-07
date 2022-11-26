@@ -1,7 +1,7 @@
 body {
-  color: #757575;
+  color: $text-color;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: $hero-color;
   font-family: Roboto, sans-serif;
   border: 0;
   margin: 0;
@@ -21,8 +21,7 @@ body {
 .address__email,
 .address__tel {
   text-decoration: none;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @extend %transition;
 }
 img {
   display: block;
@@ -44,10 +43,11 @@ h2 {
 .main-headline {
   padding-top: 0;
 }
+
 .headline {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
