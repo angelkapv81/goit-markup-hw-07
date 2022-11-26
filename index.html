@@ -70,50 +70,50 @@
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
               <button data-modal-close class="close">
-                <svg class="close-down" width="11px" height="11px">
+                <svg class="close__down" width="11px" height="11px">
                   <use href="./images/icons.svg#icon-close-button"></use>
                 </svg>
               </button>
 
               <form class="modal-contact">
-                <p class="modal-title">
+                <p class="modal-contact__title">
                   Залиште свої дані, ми вам передзвонимо
                 </p>
 
-                <label class="form-label" for="name">Iм'я</label>
-                <div class="form-group">
-                  <input class="form-input" type="text" name="name" id="name" />
-                  <svg class="modal-icon" width="12px" height="12px">
+                <label class="modal-contact__label" for="name">Iм'я</label>
+                <div class="modal-contact__group">
+                  <input class="modal-contact__input" type="text" name="name" id="name" />
+                  <svg class="modal-contact__icon" width="12px" height="12px">
                     <use href="./images/icons.svg#icon-people-1"></use>
                   </svg>
                 </div>
 
-                <label class="form-label" for="tel">Телефон</label>
-                <div class="form-group">
-                  <input class="form-input" type="tel" name="tel" id="tel" />
-                  <svg class="modal-icon" width="13px" height="13px">
+                <label class="modal-contact__label" for="tel">Телефон</label>
+                <div class="modal-contact__group">
+                  <input class="modal-contact__input" type="tel" name="tel" id="tel" />
+                  <svg class="modal-contact__icon" width="13px" height="13px">
                     <use href="./images/icons.svg#icon-tel-1"></use>
                   </svg>
                 </div>
 
-                <label class="form-label" for="email">Пошта</label>
-                <div class="form-group">
+                <label class="modal-contact__label" for="email">Пошта</label>
+                <div class="modal-contact__group">
                   <input
-                    class="form-input"
+                    class="modal-contact__input"
                     type="email"
                     name="email"
                     id="email"
                     placeholder=""
                   />
-                  <svg class="modal-icon" width="15px" height="12px">
+                  <svg class="modal-contact__icon" width="15px" height="12px">
                     <use href="./images/icons.svg#icon-letter-1"></use>
                   </svg>
                 </div>
 
-                <label for="coment" class="form-label coment-label"
+                <label for="coment" class="modal-contact__label coment-label"
                   >Коментар</label
                 >
-                <div class="form-group">
+                <div class="modal-contact__group">
                   <textarea
                     placeholder="Введіть текст"
                     name="coment"
@@ -124,18 +124,18 @@
                 </div>
 
                 <div class="form-group-agrees">
-                  <label class="checkbox-agrees">
-                    <input type="checkbox" name="agrees" class="checkbox" />
-                    <span class="icon"> </span>
+                  <label class="form-group-agrees__checkbox">
+                    <input type="checkbox" name="agrees" class="form-group-agrees__input" />
+                    <span class="form-group-agrees__icon"> </span>
                     Погоджуюся з розсилкою та приймаю &nbsp;<a
                       href=""
-                      class="contract"
+                      class="form-group-agrees__contract"
                     >
                       Умови договору</a
                     >
                   </label>
                 </div>
-                <button class="submit" type="submit">Відправити</button>
+                <button class="form-group-agrees__submit" type="submit">Відправити</button>
               </form>
             </div>
           </div>
