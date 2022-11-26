@@ -384,9 +384,6 @@ textarea {
 
 .modal-contact {
   padding: 40px;
-  /* .modal-contact__group:nth-child(4n) {
-    margin-bottom: 0;
-  } */
 }
 .modal-contact__title {
   font-weight: 700;
@@ -405,9 +402,6 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10px;
-}
-.modal-contact__group:last-child {
-  margin-bottom: 0;
 }
 .modal-contact__icon {
   position: absolute;
@@ -541,7 +535,7 @@ textarea {
   border: none;
   cursor: pointer;
 }
-.button-sign-sign:hover, .button-sign-sign:focus, .button-sign-sign:active {
+.button-sign:hover, .button-sign:focus, .button-sign:active {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: rgb(33, 150, 243);
@@ -603,7 +597,7 @@ textarea {
   border: #2196f3;
 }
 
-span[class=icon] {
+span[class=form-group-agrees__icon] {
   margin-right: 8px;
   width: 16px;
   height: 15px;

@@ -33,12 +33,12 @@ textarea {
     margin-bottom: 10px;
   }
 
-  /* .modal-contact__group:nth-child(4n) {
-    margin-bottom: 0;
-  } */
-  &__group:last-child {
-    margin-bottom: 0;
-  }
+//   &__group:nth-child(4n) {
+//     margin-bottom: 0;
+//   } 
+//   &__group:last-child {
+//     margin-bottom: 0;
+//   }
 
   &__icon {
     position: absolute;
@@ -146,7 +146,7 @@ textarea {
   line-height: calc(30 / 16);
   color: $hero-color;
   letter-spacing: 0.06em;
-  background-color: #188ce8;
+  background-color: $active-color; 
   border-radius: 4px;
   fill: $bg-color;
   display: flex;
@@ -155,10 +155,9 @@ textarea {
   border: none;
   cursor: pointer;
   @extend %transition;
-
-  &-sign:hover,
-  &-sign:focus,
-  &-sign:active {
+  &:hover,
+  &:focus,
+  &:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: rgba(33, 150, 243, 1);
   }
@@ -210,7 +209,7 @@ textarea {
   border: $accent-color;
 }
 
-span[class="icon"] {
+span[class="form-group-agrees__icon"] {
   margin-right: 8px;
   width: 16px;
   height: 15px;
