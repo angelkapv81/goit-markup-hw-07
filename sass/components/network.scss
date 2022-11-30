@@ -1,0 +1,26 @@
+.network {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $item-work-gap;
+  &__link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $logo-network-color;
+    justify-content: center;
+    align-items: center;
+    @extend %transition;
+  }
+
+  &__link:focus,
+  &__link:hover {
+    outline: none;
+    border-radius: 50%;
+    fill: $hero-color;
+    background-color: $accent-color;
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
