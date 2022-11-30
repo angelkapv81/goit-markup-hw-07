@@ -4,12 +4,19 @@
   margin: auto;
   width: 1200px;
   &__logo {
-    color: $accent-color;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include weblogo ($accent-color);
+    // color: $accent-color;
+    // font-family: "Raleway";
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
   }
+
+
+
+
+
+
   &__text {
     color: $logoheader-color;
   }

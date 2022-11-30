@@ -3,15 +3,6 @@
   justify-content: center;
   margin-bottom: $item-work-gap;
   &__link{
-    // display: flex;
-    // width: 44px;
-    // height: 44px;
-    // border-radius: 50%;
-    // fill: $logo-network-color;
-    // justify-content: center;
-    // align-items: center;
-    // @extend %transition;
-    // cursor: pointer;
     @include networklogo($logo-network-color, none);
   }
 

@@ -16,16 +16,6 @@
     margin-right: 10px;
   }
   &__logo {
-    // display: flex;
-    // height: 44px;
-    // width: 44px;
-    // border-radius: 50%;
-    // fill: $hero-color;
-    // justify-content: center;
-    // align-items: center;
-    // background-color: rgba(255, 255, 255, 0.1);
-    // @extend %transition;
-    // cursor: pointer;
     @include networklogo();
     &:hover,
     &:focus {
@@ -108,11 +98,12 @@
   padding: 60px 0;
 }
 .main-nav__text--inverse {
-  color: $hero-color;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // color: $hero-color;
+  // font-family: "Raleway";
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  @include weblogo ($hero-color);
 }
 
 .logoweb {
