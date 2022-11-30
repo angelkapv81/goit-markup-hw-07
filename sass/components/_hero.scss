@@ -22,7 +22,7 @@
   letter-spacing: 0.06em;
   text-align: center;
 }
-/* кнопка герой */
+/* кнопка*/
 .hero-button {
   padding: 10px 32px;
   margin-top: 30px;
@@ -39,7 +39,7 @@
   @extend %transition;
   &:hover,
   &:focus {
-  background-color: $active-color;
-  border: $active-color;
+    background-color: $active-color;
+    border: $active-color;
+  }
 }
- }

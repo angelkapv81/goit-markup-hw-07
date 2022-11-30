@@ -12,6 +12,8 @@ $border-color: #ececec;
 $active-color: #188ce8;
 $footer-color: #ffffff60;
 $active-footer-color:  rgba(33, 150, 243, 1);
+$font-body: "Roboro";
+$font-weblogo: "Raleway";
 
 %transition {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,7 +35,7 @@ transition-duration: 250ms;
 
 @mixin weblogo($color) {
   color: $color;
-  font-family: "Raleway";
+  font-family: $font-weblogo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: $item-work-gap;
-  &__link{
+  &__link {
     @include networklogo($logo-network-color, none);
   }
 
@@ -17,4 +17,3 @@
     margin-right: 10px;
   }
 }
-

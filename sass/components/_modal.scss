@@ -26,7 +26,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   &__icon {
@@ -96,7 +96,7 @@
 .mail-sign {
   display: flex;
   margin-left: 93px;
-  }
+}
 
 .label-sign-footer {
   font-weight: 700;
@@ -121,7 +121,7 @@
     letter-spacing: 0.03em;
     color: $text-color;
   }
-&__input {
+  &__input {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -136,41 +136,42 @@
   &__contract {
     color: $accent-color;
   }
-}
 
-// .form-group-agrees__checkbox {
-//   display: flex;
-//   align-items: center;
-//   font-size: 14px;
-//   line-height: calc(24 / 14);
-//   letter-spacing: 0.03em;
-//   color: $text-color;
-// }
+  &__input:focus + &__icon,
+  &__input:hover + &__icon {
+    border: 2px solid $accent-color;
+    border-color: $accent-color;
+    border-radius: 4px;
+  }
 
-// .form-group-agrees__input {
-//   position: absolute;
-//   white-space: nowrap;
-//   width: 1px;
-//   height: 1px;
-//   overflow: hidden;
-//   border: 0;
-//   padding: 0;
-//   clip: rect(0 0 0 0);
-//   clip-path: inset(50%);
-//   margin: -1px;
-// }
+  &__input:checked + &__icon {
+    background-image: url(../images/icon-check.jpg);
+    background-origin: border-box;
+    border: $accent-color;
+  }
 
-.form-group-agrees__input:focus + .form-group-agrees__icon,
-.form-group-agrees__input:hover + .form-group-agrees__icon {
-  border: 2px solid $accent-color;
-  border-color: $accent-color;
-  border-radius: 4px;
-}
-
-.form-group-agrees__input:checked + .form-group-agrees__icon {
-  background-image: url(../images/icon-check.jpg);
-  background-origin: border-box;
-  border: $accent-color;
+  &__submit {
+    width: 200px;
+    height: 50px;
+    background-color: $active-color;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: $hero-color;
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    padding: 0;
+    @extend %transition;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-color: $accent-color;
+    }
+  }
 }
 
 span[class="form-group-agrees__icon"] {
@@ -181,40 +182,12 @@ span[class="form-group-agrees__icon"] {
   border-radius: 4px;
 }
 
-// .form-group-agrees__contract {
-//   color: $accent-color;
-// }
-
 .modal-contact__input:focus {
   fill: $accent-color;
 }
 
-.form-group-agrees__submit {
-  width: 200px;
-  height: 50px;
-  background-color: $active-color;
-  outline: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: $hero-color;
-  border-radius: 4px;
-  border: none;
-  margin-top: 30px;
-  padding: 0;
-  @extend %transition;
-  cursor: pointer;
-  &:focus, 
-    &:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        background-color: $accent-color; 
-    }
-
-}
-
 textarea {
-    resize: none;
+  resize: none;
   padding: 12px 16px;
   height: 120px;
   width: 100%;
@@ -225,7 +198,6 @@ textarea {
     color: rgba(117, 117, 117, 0.5);
   }
 }
-
 
 textarea:focus,
 textarea:hover,
